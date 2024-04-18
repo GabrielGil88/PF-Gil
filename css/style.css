@@ -417,14 +417,14 @@ body {
 
 /* Contenedor */
 
-.conctactContainer{
+.conctactContainer {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap:30px;
+  gap: 30px;
   margin: 50px 0;
 }
 
@@ -486,7 +486,7 @@ button[type="submit"]:hover {
 
 /* container Map & Links */
 
-.contactBox{
+.contactBox {
   width: 100%;
   max-width: 500px;
 }
@@ -530,7 +530,7 @@ button[type="submit"]:hover {
 .instagram-button p,
 .facebook-button p,
 .whatsapp-button p {
-  margin:0;
+  margin: 0;
   text-align: center;
   font-size: 16px;
   font-weight: bold;
@@ -548,7 +548,7 @@ button[type="submit"]:hover {
   background-color: rgb(52, 197, 71);
 }
 
-.linksBox a:hover{
+.linksBox a:hover {
   width: 100%;
 }
 
