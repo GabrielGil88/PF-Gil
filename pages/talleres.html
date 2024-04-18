@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link a bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- link a css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Colour Palette - Talleres</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-amarillo navbar-expand-md">
+            <div class="container-fluid flex-column">
+                <a href="../index.html" class="logo">
+                    <img src="../images/logo.png" alt="Logo de Colour Palette">
+                    <h1>maquillaje artístico y peinados para eventos</h1>
+                </a>
+                <!-- menu hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header bg-amarillo">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Colour Palette</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body bg-amarillo">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item"><a class="nav-link px-4 fs-5 fw-semibold" aria-current="page"
+                                    href="../index.html">inicio</a></li>
+                            <li class="nav-item"><a class="nav-link px-4 fs-5 fw-semibold" href="sobreMi.html">sobre
+                                    mi</a></li>
+                            <li class="nav-item"><a class="nav-link px-4 fs-5 fw-semibold"
+                                    href="portfolio.html">portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link px-4 fs-5 fw-semibold active"
+                                    href="talleres.html">talleres</a></li>
+                            <li class="nav-item"><a class="nav-link px-4 fs-5 fw-semibold"
+                                    href="contacto.html">contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="">
+            <div class="subtitulo">
+                <h2>talleres</h2>
+            </div>
+            <div class="bg-gif row justify-content-center align-items-center my-5">
+                <div class="col-10  talleresContent mx-4">
+                    <div class="col-lg-6 cardTalleres">
+                        <h2>clases presenciales</h2>
+                        <p>Descripción del producto A.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam optio expedita harum? Quam ea, itaque fugiat sed quas magni INCLUYE:.</p>
+                        <ul>
+                            <li>elemento A</li>
+                            <li>elemento B</li>
+                            <li>elemento C</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <div class="col-lg-6 cardTalleres">
+                            <h2>clases online</h2>
+                            <p>Descripción del producto B.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam optio expedita harum? Quam ea, itaque  sed quas magni obcaecati. INCLUYE:</p>
+                            <ul>
+                                <li>elemento A</li>
+                                <li>elemento B</li>
+                                <li>elemento C</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid flex-wrap bg-gris py-5 border-top footer mb-0">
+        <div class="d-flex justify-content-between col-8 footerContent">
+            <div class="d-flex gap-2 h5 mb-0 location">
+                <i class="bi bi-geo-alt-fill"></i>
+                <p>Zona Norte GBA y CABA, Argentina</p>
+            </div>
+            <ul class="d-flex justify-content-center list-unstyled mb-0">
+                <li class="m-3"><a class="iconosFooter" href="http://x.com"><i class="bi bi-twitter">
+                            <use xlink:href="#twitter"></use>
+                        </i></a></li>
+                <li class="m-3"><a class="iconosFooter" href="http://instagram.com"><i class="bi bi-instagram">
+                            <use xlink:href="#instagram"></use>
+                        </i></a></li>
+                <li class="m-3"><a class="iconosFooter" href="http://facebook.com"><i class="bi bi-facebook">
+                            <use xlink:href="#facebook"></use>
+                        </i></a></li>
+            </ul>
+        </div>
+        <div class="derechos">
+            <span>COLOUR PALETTE - TODOS LOS DERECHOS RESERVADOS &copy;2024</span>
+        </div>
+    </footer>
+    <!-- script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
