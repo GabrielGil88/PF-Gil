@@ -162,7 +162,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 100px 0;
-  gap: 2vh;
+  gap: 3vh;
 }
 
 /* Estilo para la tarjeta */
@@ -177,13 +177,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1vw;
+  transition: transform 0.5s ease-in-out;
 }
 
 /* Estilo para imagen de la tarjeta */
 .homeCard img {
   width: 100%;
   height: 100%;
-  /* display: block; */
   border-radius: 8px;
   object-fit: cover;
 }
@@ -193,26 +193,48 @@ body {
   display: flex;
   justify-content: center;
   margin: 10px;
+  color:#F9F07A;
+
 }
 
 .card-img-overlay h2 {
+  position: absolute;
+  bottom: 200px;
   font-size: 30px;
   font-weight: 700;
   text-align: center;
+  text-shadow: #000000 0.1em 0.1em 0.2em;
+  transition: transform 0.5s ease-in-out;
 }
 
 .card-img-overlay p {
   position: absolute;
-  bottom: 0;
+  bottom: -20px;
   font-size: 16px;
   text-align: center;
+  opacity: 0;
+  transition: transform 0.5s ease-in-out;
 }
 
 /* HOVER */
+
+.homeCard:hover .card-img-overlay p {
+  display: block;
+  opacity: 1;
+  transform: translateY(-20px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.homeCard:hover .card-img-overlay h2 {
+  transform: translateY(-50px);
+  transition: transform 0.5s ease-in-out;
+
+}
+
 .homeCard:hover {
   transform: scale(1.1);
-  transition-duration: 0.5s;
   background-color: #FB88B4;
+  transition: transform 0.5s ease-in-out;
 }
 
 
