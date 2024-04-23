@@ -339,6 +339,7 @@ body {
   overflow: hidden;
   border: 2px solid #F9F07A;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .imagenGaleria img {
