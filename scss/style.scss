@@ -1,0 +1,659 @@
+/* importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* importar BS iconos */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+body {
+    background-color: #9195F6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* colores a utilizar */
+.bg-amarillo {
+    background-color: #F9F07A;
+}
+
+.bg-celeste {
+    background-color: #B7C9F2;
+}
+
+.bg-azul {
+    background-color: #9195F6;
+}
+
+.bg-rosa {
+    background-color: #FB88B4;
+}
+
+.bg-gris {
+    background-color: #515151;
+}
+
+.bg-gif {
+    background-image: url("../images/bg-gif-low.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* --------------------- NAVBAR --------------------- */
+
+/* modifica el ancho de la barra */
+.offcanvas {
+    width: 250px !important;
+}
+
+.logo {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 250px;
+}
+
+.logo h1 {
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    font-variant: small-caps;
+    margin-top: -10px;
+    font-weight: 700;
+}
+
+.nav-item {
+    color: #000;
+    font-variant: small-caps;
+}
+
+
+/* --------------------- FOOTER --------------------- */
+
+.derechos {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5%;
+    font-size: 14px;
+    color: #F9F07A;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F9F07A;
+}
+
+.location p {
+    margin: 0;
+}
+
+
+/* iconos */
+.iconosFooter {
+    color: #F9F07A;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+
+
+/* --------------------- SUBTITULOS --------------------- */
+.subtitulo h2 {
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: #000;
+    font-variant: small-caps;
+    padding: 50px 0 0;
+}
+
+
+
+/* --------------------- CAROUSEL --------------------- */
+
+/* tamaño de contenedor */
+.carouselContainer {
+    width: 100%;
+    height: 70vh;
+}
+
+.carousel-caption {
+    bottom: 4rem;
+}
+
+/* ajuste de imagen al contenedor */
+.carouselImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* --------------------- SERVICIOS CARDS --------------------- */
+
+/*Estilo para el contenedor*/
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    gap: 3vh;
+}
+
+/* Estilo para la tarjeta */
+.homeCard {
+    width: 280px;
+    height: 480px;
+    border: 1px solid #959595;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: #B7C9F2;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Estilo para imagen de la tarjeta */
+.homeCard img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Estilo para el texto de la tarjeta */
+.card-img-overlay {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    color: #F9F07A;
+
+}
+
+.card-img-overlay h2 {
+    position: absolute;
+    bottom: 200px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: #000000 0.1em 0.1em 0.2em;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card-img-overlay p {
+    position: absolute;
+    bottom: -20px;
+    font-size: 16px;
+    text-align: center;
+    opacity: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* HOVER */
+
+.homeCard:hover .card-img-overlay p {
+    display: block;
+    opacity: 1;
+    transform: translateY(-20px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.homeCard:hover .card-img-overlay h2 {
+    transform: translateY(-50px);
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.homeCard:hover {
+    transform: scale(1.1);
+    background-color: #FB88B4;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+
+/* --------------------- TESTIMONIOS --------------------- */
+
+.testimonioBox {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonioContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 2vh;
+}
+
+.testimonioContent img {
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5%
+}
+
+.testimonioContent p {
+    text-align: center;
+    font-size: 18px;
+    color: #000
+}
+
+.testimonioContent h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #000
+}
+
+/* --------------------- SOBRE MI --------------------- */
+
+.sobremiBox {
+    padding: 50px;
+    gap: 50px;
+}
+
+.sobremiImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5%;
+}
+
+.sobremiContent h3 {
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: #000;
+    font-variant: small-caps;
+    padding: 20px 0 20px;
+}
+
+.sobremiContent p {
+    text-align: justify;
+    font-size: 18px;
+    color: #000
+}
+
+/* --------------------- PORTFOLIO --------------------- */
+
+
+.nombreSeccion {
+    width: 100%;
+    padding-top: 5%;
+    border-bottom: #F9F07A 4px solid;
+    font-size: 24px;
+    color: #F9F07A;
+    font-weight: bold;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.galeriaInfantiles,
+.galeriaEventos,
+.galeriaTrabajos,
+.galeriaMias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+}
+
+.imagenGaleria {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    border: 2px solid #F9F07A;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.imagenGaleria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+.large {
+    grid-column: span 2;
+    grid-row: span 2;
+    height: 710px;
+}
+
+.galeriaInfantiles img:hover,
+.galeriaEventos img:hover,
+.galeriaTrabajos img:hover,
+.imagenGaleriaTaller img:hover,
+.galeriaMias img:hover {
+    transform: scale(1.1);
+}
+
+/* Galleria TALLERES con flex*/
+
+.galeriaTalleres {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.imagenGaleriaTaller {
+    flex-grow: 1;
+    flex-basis: 280px;
+    height: 280px;
+    overflow: hidden;
+    border: 2px solid #F9F07A;
+    border-radius: 8px;
+}
+
+.imagenGaleriaTaller img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+/* --------------------- TALLERES --------------------- */
+
+
+.talleresContent {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 0 50px;
+    gap: 50px;
+}
+
+
+.cardTalleres {
+    color: #F9F07A;
+    background-color: #00000060;
+    border-radius: 5px;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+.cardTalleres h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-variant: small-caps;
+}
+
+
+.cardTalleres:hover {
+    transform: scale(1.2);
+}
+
+
+/* --------------------- CONTACTO --------------------- */
+
+
+/* Contenedor */
+
+.conctactContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+
+/* Formulario */
+
+.formularioContact {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #FB88B4;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+button[type="reset"],
+button[type="submit"] {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #F9F07A;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="reset"]:hover,
+button[type="submit"]:hover {
+    background-color: #a59d2a;
+}
+
+.form-botones {
+    text-align: right;
+}
+
+
+/* container Map & Links */
+
+.contactBox {
+    width: 100%;
+    max-width: 500px;
+}
+
+
+/* botones de contacto */
+.linksBox {
+    width: 100%;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.linksBox a {
+    text-decoration: none;
+    color: black;
+    width: 80%;
+    padding: 10px 0;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.instagram-button img,
+.facebook-button img,
+.whatsapp-button img {
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+}
+
+.instagram-button p,
+.facebook-button p,
+.whatsapp-button p {
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.instagram-button {
+    background-color: rgb(217, 71, 207);
+}
+
+.facebook-button {
+    background-color: rgb(33, 86, 202);
+}
+
+.whatsapp-button {
+    background-color: rgb(52, 197, 71);
+}
+
+.linksBox a:hover {
+    width: 100%;
+}
+
+
+
+
+/* --------------------- RESPONSIVE --------------------- */
+
+
+@media (max-width: 992px) {
+
+    /* cambio en organizacion de las CARD en Sobre Mi */
+    .sobremiBox {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .sobremiContent h3 {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .sobremiContent p {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 840px) {
+
+    /* cambio en organizacion de las CARDS en Home*/
+    .cardContainer {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    /* cambio en el footer */
+    .footerContent {
+        flex-direction: column;
+    }
+
+    /* cambio en carousel */
+    .carousel-caption {
+        bottom: 0;
+        scale: 0.85;
+    }
+
+    .carouselImg {
+        object-position: left;
+    }
+
+    /* cambio en testimonio card */
+
+    .testimonioBox {
+        height: 750px;
+    }
+
+    .testimonioContent {
+        flex-direction: column;
+    }
+
+    .testimonioContent img {
+        height: 200px;
+        align-self: center;
+        border-radius: 100%;
+    }
+
+    /* cambio en el tamaño de las imagenes del PORTFOLIO */
+
+    .wide {
+        grid-column: span 1;
+    }
+
+    .large {
+        grid-column: span 1;
+        grid-row: span 1;
+        height: 50vh;
+    }
+
+
+}
