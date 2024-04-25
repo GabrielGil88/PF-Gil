@@ -1,0 +1,150 @@
+/* --------------------- CONTACTO --------------------- */
+
+/* Contenedor */
+
+.conctactContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+/* Formulario */
+
+.formularioContact {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #FB88B4;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+
+    &[type="text"],
+    &[type="email"],
+    &[type="tel"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: none;
+    }
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+button {
+
+    &[type="reset"],
+    &[type="submit"] {
+        padding: 10px 20px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: #F9F07A;
+        color: #000000;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    &[type="reset"]:hover,
+    &[type="submit"]:hover {
+        background-color: #a59d2a;
+    }
+}
+
+.form-botones {
+    text-align: right;
+}
+
+/* container Map & Links */
+
+.contactBox {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* botones de contacto */
+
+.linksBox {
+    width: 100%;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+    a {
+        text-decoration: none;
+        color: black;
+        width: 80%;
+        padding: 10px 0;
+        gap: 30px;
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 8px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.instagram-button img,
+.facebook-button img,
+.whatsapp-button img {
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+}
+
+.instagram-button p,
+.facebook-button p,
+.whatsapp-button p {
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.instagram-button {
+    background-color: rgb(217, 71, 207);
+}
+
+.facebook-button {
+    background-color: rgb(33, 86, 202);
+}
+
+.whatsapp-button {
+    background-color: rgb(52, 197, 71);
+}
+
+.linksBox a:hover {
+    width: 100%;
+}

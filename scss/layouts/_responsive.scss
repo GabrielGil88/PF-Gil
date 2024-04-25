@@ -1,0 +1,78 @@
+/* --------------------- RESPONSIVE --------------------- */
+
+@media (max-width: 992px) {
+    /* cambio en organizacion de las CARD en Sobre Mi */
+  
+    .sobremiBox {
+      flex-direction: column;
+      padding: 20px;
+      gap: 20px;
+    }
+  
+    .sobremiContent {
+      h3 {
+        font-size: 30px;
+        padding: 10px;
+      }
+  
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+  
+  @media (max-width: 840px) {
+    /* cambio en organizacion de las CARDS en Home*/
+  
+    .cardContainer {
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* cambio en el footer */
+  
+    .footerContent {
+      flex-direction: column;
+    }
+  
+    /* cambio en carousel */
+  
+    .carousel-caption {
+      bottom: 0;
+      scale: 0.85;
+    }
+  
+    .carouselImg {
+      object-position: left;
+    }
+  
+    /* cambio en testimonio card */
+  
+    .testimonioBox {
+      height: 750px;
+    }
+  
+    .testimonioContent {
+      flex-direction: column;
+  
+      img {
+        height: 200px;
+        align-self: center;
+        border-radius: 100%;
+      }
+    }
+  
+    /* cambio en el tamaño de las imagenes del PORTFOLIO */
+  
+    .wide {
+      grid-column: span 1;
+    }
+  
+    .large {
+      grid-column: span 1;
+      grid-row: span 1;
+      height: 50vh;
+    }
+  }
+  
