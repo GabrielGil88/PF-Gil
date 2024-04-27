@@ -1,14 +1,31 @@
-
-
-
-
 // VARIABLES DE COLORES
 
 $color-amarillo: #F9F07A;
+$color-amarrilloOscuro: #f3d702;
 $color-celeste: #B7C9F2;
 $color-azul: #9195F6;
 $color-rosa: #FB88B4;
 $color-gris: #515151;
-$gif: url("../images/bg-gif-low.gif");
+$color-negro: #000;
+$color-bgnegro: #00000050;
 
 
+.bg-amarillo {
+    background-color: $color-amarillo;
+}
+
+.bg-celeste {
+    background-color: $color-celeste;
+}
+
+.bg-azul {
+    background-color: $color-azul;
+}
+
+.bg-rosa {
+    background-color: $color-rosa;
+}
+
+.bg-gris {
+    background-color: $color-gris;
+}

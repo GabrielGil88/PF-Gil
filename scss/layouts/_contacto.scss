@@ -57,26 +57,7 @@ textarea {
     resize: none;
 }
 
-button {
-
-    &[type="reset"],
-    &[type="submit"] {
-        padding: 10px 20px;
-        margin-right: 10px;
-        border: none;
-        border-radius: 4px;
-        background-color: #F9F07A;
-        color: #000000;
-        font-size: 16px;
-        cursor: pointer;
-    }
-
-    &[type="reset"]:hover,
-    &[type="submit"]:hover {
-        background-color: #a59d2a;
-    }
-}
-
+/* Botones */   
 .form-botones {
     text-align: right;
 }

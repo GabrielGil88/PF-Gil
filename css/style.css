@@ -12,8 +12,40 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.bg-amarillo {
+  background-color: #F9F07A;
+}
+
+.bg-celeste {
+  background-color: #B7C9F2;
+}
+
+.bg-azul {
+  background-color: #9195F6;
+}
+
+.bg-rosa {
+  background-color: #FB88B4;
+}
+
+.bg-gris {
+  background-color: #515151;
+}
+
 /* importar fuente */
 /* importar BS iconos */
+/* --------------------- SUBTITULOS --------------------- */
+.subtitulo h2 {
+  text-align: center;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: #000;
+  font-variant: small-caps;
+  padding: 50px 0 0;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -89,6 +121,24 @@ header {
   text-decoration: none;
 }
 
+.btn-main {
+  background-color: #F9F07A;
+  color: #000;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: 2px solid #f3d702;
+  border-radius: 0.375rem;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.3137254902) 0px 2px 2px;
+}
+.btn-main:hover {
+  background-color: #f3d702;
+  box-shadow: rgba(0, 0, 0, 0.3137254902) 2px 4px 4px;
+}
+
 /* --------------------- CAROUSEL --------------------- */
 /* tamaño de contenedor */
 .carouselContainer {
@@ -155,6 +205,7 @@ header {
 }
 .card-img-overlay p {
   position: absolute;
+  background-color: rgba(0, 0, 0, 0.3137254902);
   bottom: -20px;
   font-size: 16px;
   text-align: center;
@@ -265,20 +316,7 @@ textarea {
   resize: none;
 }
 
-button[type=reset], button[type=submit] {
-  padding: 10px 20px;
-  margin-right: 10px;
-  border: none;
-  border-radius: 4px;
-  background-color: #F9F07A;
-  color: #000000;
-  font-size: 16px;
-  cursor: pointer;
-}
-button[type=reset]:hover, button[type=submit]:hover {
-  background-color: #a59d2a;
-}
-
+/* Botones */
 .form-botones {
   text-align: right;
 }
@@ -376,7 +414,7 @@ button[type=reset]:hover, button[type=submit]:hover {
   width: 500px;
   height: auto;
   color: #F9F07A;
-  background-color: rgba(0, 0, 0, 0.3764705882);
+  background-color: rgba(0, 0, 0, 0.3137254902);
   border-radius: 5px;
   padding: 20px;
   margin: 20px;
@@ -587,37 +625,6 @@ button[type=reset]:hover, button[type=submit]:hover {
   .logo {
     width: 80%;
   }
-}
-.bg-amarillo {
-  background-color: #F9F07A;
-}
-
-.bg-celeste {
-  background-color: #B7C9F2;
-}
-
-.bg-azul {
-  background-color: #9195F6;
-}
-
-.bg-rosa {
-  background-color: #FB88B4;
-}
-
-.bg-gris {
-  background-color: #515151;
-}
-
-/* --------------------- SUBTITULOS --------------------- */
-.subtitulo h2 {
-  text-align: center;
-  text-decoration: none;
-  font-size: 40px;
-  font-family: "Montserrat";
-  font-weight: bold;
-  color: #000;
-  font-variant: small-caps;
-  padding: 50px 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */
