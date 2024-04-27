@@ -1,21 +1,44 @@
 /* --------------------- TALLERES --------------------- */
 
-.talleresContent {
+
+.talleresContainer {
+    position: relative;
+    width: 100%;
     height: auto;
+    overflow: hidden;
+
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+}
+
+
+.talleresContent {
+    margin: 100px 0 100px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    margin: 50px 0 50px;
-    gap: 50px;
+    align-items: center;
 }
 
 .cardTalleres {
+    width: 500px;
+    height: auto;  
     color: #F9F07A;
     background-color: #00000060;
     border-radius: 5px;
     padding: 20px;
+    margin: 20px;
     gap: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     transition: 0.5s;
 
     h2 {
@@ -28,7 +51,15 @@
         font-variant: small-caps;
     }
 
+    p {
+        font-size: 20px;
+    }
+
+    ul{
+        text-align: start;
+    }
+
     &:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 }

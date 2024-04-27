@@ -36,3 +36,8 @@ header {
     color: #000;
     font-variant: small-caps;
 }
+
+.navbarBox {
+    display: flex;
+    flex-direction: column;
+}
