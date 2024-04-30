@@ -7,9 +7,40 @@
     height: 70vh;
 }
 
+
 .carousel-caption {
-    bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    a {
+        width: max-content;
+        margin: 10px 0px 50px;
+    }
 }
+
+.textoCarousel {
+    h2 {
+        font-size: 40px;
+        font-weight: 900;
+        color: $color-amarillo;
+        text-shadow: $color-negro 0.1em 0.1em 0.2em;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 500;
+        color: $color-negro;
+    }
+
+    .textoClaro {
+        color: #FB88B4;
+    }
+
+}
+
+
+
 
 /* ajuste de imagen al contenedor */
 
@@ -74,7 +105,9 @@
 
     p {
         position: absolute;
+        color: $color-amarillo;
         background-color: $color-bgnegro;
+        font-weight: 500;
         bottom: -20px;
         font-size: 16px;
         text-align: center;

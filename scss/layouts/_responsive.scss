@@ -19,6 +19,36 @@
       font-size: 16px;
     }
   }
+
+  /* cambio en carousel */
+  .carousel-caption {
+    margin: 0;
+    bottom: 8%;
+    gap: 0;
+
+    a {
+      width: max-content;
+      margin: 0;
+    }
+  }
+
+  .textoCarousel {
+    justify-self: center;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+  }
+
+  .carouselImg {
+    object-position: left;
+  }
+
 }
 
 @media (max-width: 840px) {
@@ -41,16 +71,6 @@
   /* cambio en el footer */
   .footerContent {
     flex-direction: column;
-  }
-
-  /* cambio en carousel */
-  .carousel-caption {
-    bottom: 0;
-    scale: 0.85;
-  }
-
-  .carouselImg {
-    object-position: left;
   }
 
   /* cambio en testimonio card */
@@ -85,7 +105,8 @@
   .talleresContent {
     flex-direction: column;
   }
-  .cardTalleres{
+
+  .cardTalleres {
     width: 80%;
   }
 }
