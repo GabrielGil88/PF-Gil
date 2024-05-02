@@ -89,8 +89,7 @@ textarea {
 .instagram-button img,
 .facebook-button img,
 .whatsapp-button img {
-    width: 30px;
-    height: 30px;
+    @include imagen (30px, 30px, contain , center);
     margin: 0px 10px;
 }
 

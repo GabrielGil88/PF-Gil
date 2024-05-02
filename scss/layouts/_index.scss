@@ -19,12 +19,12 @@
 
 .textoCarousel {
     h2 {
-        @include texto (40px, center, 900, $color-amarillo);
+        @include texto (40px, 0, 900, $color-amarillo);
         text-shadow: $color-negro 0.1em 0.1em 0.2em;
     }
 
     p {
-        @include texto (18px, center, 500, $color-negro);
+        @include texto (18px, 0, 500, $color-negro);
     }
 
     .textoClaro {

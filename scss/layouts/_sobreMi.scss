@@ -1,19 +1,24 @@
 /* --------------------- SOBRE MI --------------------- */
 
 .sobremiBox {
+  @include flex (row, center, center, 50px);
+  border-radius: 20px;
+  margin: 50px 0;
   padding: 50px;
-  gap: 50px;
+
 }
 
-.sobremiImg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 5%;
+.sobremiImg {
+  @include flex (column, center, center, 30px);
+
+  img {
+    @include imagen (100%, 80vh, cover, center);
+    border-radius: 20px;
+  }
 }
 
 .sobremiContent {
+
   h2 {
     @include texto (40px, center, bold, $color-negro);
     text-decoration: none;

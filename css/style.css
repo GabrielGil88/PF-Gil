@@ -84,8 +84,11 @@ header {
 }
 
 .navbarBox {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* --------------------- FOOTER --------------------- */
@@ -161,14 +164,14 @@ header {
 
 .textoCarousel h2 {
   font-size: 40px;
-  text-align: center;
+  text-align: 0;
   font-weight: 900;
   color: #F9F07A;
   text-shadow: #000 0.1em 0.1em 0.2em;
 }
 .textoCarousel p {
   font-size: 18px;
-  text-align: center;
+  text-align: 0;
   font-weight: 500;
   color: #000;
 }
@@ -401,6 +404,8 @@ textarea {
 .whatsapp-button img {
   width: 30px;
   height: 30px;
+  object-fit: contain;
+  object-position: center;
   margin: 0px 10px;
 }
 
@@ -505,16 +510,29 @@ textarea {
 
 /* --------------------- SOBRE MI --------------------- */
 .sobremiBox {
-  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
+  border-radius: 20px;
+  margin: 50px 0;
+  padding: 50px;
 }
 
+.sobremiImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
 .sobremiImg img {
   width: 100%;
-  height: 100%;
+  height: 80vh;
   object-fit: cover;
   object-position: center;
-  border-radius: 5%;
+  border-radius: 20px;
 }
 
 .sobremiContent h2 {
@@ -622,6 +640,9 @@ textarea {
     padding: 20px;
     gap: 20px;
   }
+  .sobremiImg img {
+    height: 100%;
+  }
   .sobremiContent h3 {
     font-size: 30px;
     padding: 10px;
@@ -661,9 +682,7 @@ textarea {
 }
 @media (max-width: 767px) {
   .navbarBox {
-    display: flex;
     flex-direction: row;
-    justify-content: space-around;
   }
   /* cambio en el footer */
   .footerContent {

@@ -9,6 +9,13 @@
     gap: 20px;
   }
 
+  .sobremiImg {
+    img {
+      height: 100%;
+    }
+  }
+
+
   .sobremiContent {
     h3 {
       font-size: 30px;
@@ -63,9 +70,7 @@
 
   // cambio en el navbar
   .navbarBox {
-    display: flex;
     flex-direction: row;
-    justify-content: space-around;
   }
 
   /* cambio en el footer */
