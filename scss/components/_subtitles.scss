@@ -1,0 +1,8 @@
+/* --------------------- SUBTITULOS --------------------- */
+.subtitulo h2 {
+    @include texto (40px, center, bold, $color-dark);
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-variant: small-caps;
+    padding: 50px 0 0;
+}

@@ -20,13 +20,13 @@
 .sobremiContent {
 
   h2 {
-    @include texto (40px, center, bold, $color-negro);
+    @include texto (40px, center, bold, $color-dark);
     text-decoration: none;
     font-variant: small-caps;
     padding: 20px 0 20px;
   }
 
   p {
-    @include texto (18px, justify, normal, $color-negro);
+    @include texto (18px, justify, normal, $color-dark);
   }
 }

@@ -1,25 +1,18 @@
 /* --------------------- FOOTER --------------------- */
 
 .derechos {
-    text-align: center;
-    font-weight: bold;
+    @include texto (16px, center, bold, $color-primary);
     margin-top: 5%;
-    font-size: 14px;
-    color:$color-amarillo;
+
 }
 
 .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex (column, center, center, 0);
 }
 
 .location {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:$color-amarillo;
+    @include flex (row, center, center, 0);
+    color:$color-primary;
 }
 
 .location p {
@@ -29,7 +22,7 @@
 
 /* iconos */
 .iconosFooter {
-    color:$color-amarillo;
+    color:$color-primary;
     font-size: 24px;
     text-decoration: none;
 }

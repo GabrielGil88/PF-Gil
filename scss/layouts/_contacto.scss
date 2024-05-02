@@ -16,7 +16,7 @@
     width: 100%;
     max-width: 500px;
     padding: 20px;
-    background-color: #FB88B4;
+    background-color: $color-secondary;
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -28,7 +28,7 @@
 label {
     display: block;
     margin-bottom: 8px;
-    @include texto (16px, flex-start, bold, $color-negro);
+    @include texto (16px, flex-start, bold, $color-dark);
 }
 
 input {
@@ -38,7 +38,7 @@ input {
     &[type="tel"] {
         width: 100%;
         padding: 10px;
-        border: 1px solid #ccc;
+        border: 1px solid $color-midDark;
         border-radius: 4px;
         box-sizing: border-box;
         resize: none;
@@ -48,7 +48,7 @@ input {
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid $color-midDark;
     border-radius: 4px;
     box-sizing: border-box;
     resize: none;
@@ -77,7 +77,7 @@ textarea {
     a {
         @include flex (row, flex-start, center, 30px);
         text-decoration: none;
-        color: black;
+        color: $color-dark;
         width: 80%;
         padding: 10px 0;
         cursor: pointer;
@@ -97,7 +97,7 @@ textarea {
 .facebook-button p,
 .whatsapp-button p {
     margin: 0;
-    @include texto (16px, center, bold, $color-negro);
+    @include texto (16px, center, bold, $color-dark);
 }
 
 .instagram-button {

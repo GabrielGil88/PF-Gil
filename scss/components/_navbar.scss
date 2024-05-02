@@ -12,36 +12,27 @@ header {
 }
 
 .logo {
+    @include flex (column, center , center, 0);
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
     img {
-        width: 250px;
-        height: auto;
+        @include imagen (250px, auto, contain, center);
         max-width: 250px;
     }
 
     h1 {
-        text-align: center;
-        font-size: 16px;
-        color: $color-negro;
+        @include texto (16px, center, 700 , $color-dark);
         font-variant: small-caps;
         margin-top: -10px;
-        font-weight: 700;
     }
 }
 
 .nav-item {
-    color: $color-negro;
+    color: $color-dark;
     font-variant: small-caps;
 }
 
 .navbarBox {
+    @include flex (column, space-around, center, 0);
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
 }

@@ -28,8 +28,8 @@
     @include flex (column, space-around, center, 20px);
     width: 500px;
     height: auto;  
-    color: $color-amarillo;
-    background-color: $color-bgnegro;
+    color: $color-primary;
+    background-color: $color-fondoDark;
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
@@ -37,21 +37,21 @@
     transition: 0.5s;
 
     h2 {
-        @include texto(40px, center, bold, $color-amarillo);
+        @include texto(40px, center, bold, $color-primary);
         font-variant: small-caps;
         margin-bottom: 10px;
     }
 
     h3{
-        @include texto(20px, center, bold, $color-rosa);
+        @include texto(20px, center, bold, $color-secondary);
     }
 
     p {
-        @include texto(18px, justify, normal, $color-amarillo);
+        @include texto(18px, justify, normal, $color-primary);
     }
 
     ul{
-        @include texto(18px, left, normal, $color-amarillo);
+        @include texto(18px, left, normal, $color-primary);
         font-variant: small-caps;
     }
 

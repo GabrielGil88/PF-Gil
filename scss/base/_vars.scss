@@ -1,31 +1,31 @@
 // VARIABLES DE COLORES
-
-$color-amarillo: #F9F07A;
-$color-amarrilloOscuro: #f3d702;
-$color-celeste: #B7C9F2;
-$color-azul: #9195F6;
-$color-rosa: #FB88B4;
-$color-gris: #515151;
-$color-negro: #000;
-$color-bgnegro: #00000080;
+$color-primary: #F9F07A;
+$color-primaryDark: #f3d702;
+$color-secondary: #FB88B4;
+$color-tertiary: #9195F6;
+$color-quaternary: #B7C9F2;
+$color-light: #FFFFFF;
+$color-midDark: #515151;
+$color-dark:#000000;
+$color-fondoDark:#00000080;
 
 
 .bg-amarillo {
-    background-color: $color-amarillo;
-}
-
-.bg-celeste {
-    background-color: $color-celeste;
-}
-
-.bg-azul {
-    background-color: $color-azul;
+    background-color: $color-primary;
 }
 
 .bg-rosa {
-    background-color: $color-rosa;
+    background-color: $color-secondary;
+}
+
+.bg-azul {
+    background-color: $color-tertiary;
+}
+
+.bg-celeste {
+    background-color: $color-quaternary;
 }
 
 .bg-gris {
-    background-color: $color-gris;
+    background-color: $color-midDark;
 }

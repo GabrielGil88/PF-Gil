@@ -3,8 +3,8 @@
 .nombreSeccion {
     width: 100%;
     padding-top: 5%;
-    border-bottom: #F9F07A 4px solid;
-    @include texto (24px, left, bold, $color-amarillo);
+    border-bottom: $color-primary 4px solid;
+    @include texto (24px, left, bold, $color-primary);
     margin: 20px 0;
 }
 
@@ -21,7 +21,7 @@
     width: 100%;
     height: 50vh;
     overflow: hidden;
-    border: 2px solid #F9F07A;
+    border: 2px solid $color-primary;
     border-radius: 8px;
     cursor: pointer;
 
@@ -62,7 +62,7 @@
     flex-basis: 280px;
     height: 280px;
     overflow: hidden;
-    border: 2px solid #F9F07A;
+    border: 2px solid $color-primary;
     border-radius: 8px;
 
     img {

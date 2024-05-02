@@ -19,30 +19,24 @@
 
 .textoCarousel {
     h2 {
-        @include texto (40px, 0, 900, $color-amarillo);
-        text-shadow: $color-negro 0.1em 0.1em 0.2em;
+        @include texto (40px, 0, 900, $color-primary);
+        text-shadow: $color-dark 0.1em 0.1em 0.2em;
     }
 
     p {
-        @include texto (18px, 0, 500, $color-negro);
+        @include texto (18px, 0, 500, $color-dark);
     }
 
     .textoClaro {
-        color: #FB88B4;
+        color: $color-secondary;
     }
 
 }
 
-
-
-
 /* ajuste de imagen al contenedor */
 
 .carouselImg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    @include imagen (100%, 100%, cover, center);
 }
 
 
@@ -60,19 +54,17 @@
 .homeCard {
     width: 280px;
     height: 480px;
-    border: 1px solid #959595;
+    border: 1px solid $color-midDark;
     border-radius: 8px;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    background-color: #B7C9F2;
+    background-color: $color-quaternary;
     @include flex (column, 0, 0, 1vw);
     transition: transform 0.5s ease-in-out;
 
     img {
-        width: 100%;
-        height: 100%;
+        @include imagen (100%, 100%, cover, center);
         border-radius: 8px;
-        object-fit: cover;
     }
 }
 
@@ -84,15 +76,15 @@
     h2 {
         position: absolute;
         bottom: 200px;
-        @include texto (30px, center, 700, $color-amarillo);
-        text-shadow: #000000 0.1em 0.1em 0.2em;
+        @include texto (30px, center, 700, $color-primary);
+        text-shadow: $color-dark 0.1em 0.1em 0.1em;
         transition: transform 0.5s ease-in-out;
     }
 
     p {
         position: absolute;
-        background-color: $color-bgnegro;
-        @include texto (16px, center, 500, $color-amarillo);
+        background-color: $color-fondoDark;
+        @include texto (16px, center, 500, $color-primary);
         bottom: -20px;
         opacity: 0;
         transition: transform 0.5s ease-in-out;
@@ -117,7 +109,7 @@
     }
 
     transform: scale(1.1);
-    background-color: #FB88B4;
+    background-color: $color-secondary;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -133,19 +125,16 @@
     padding: 20px;
 
     img {
-        width: 100%;
+        @include imagen (100%, 250px, cover, center);
         max-width: 250px;
-        height: 250px;
-        object-fit: cover;
-        object-position: center;
         border-radius: 5%;
     }
 
     p {
-        @include texto (18px, center, 500, $color-negro);
+        @include texto (18px, center, 500, $color-dark);
     }
 
     h3 {
-        @include texto (24px, center, 600, $color-negro);
+        @include texto (24px, center, 600, $color-dark);
     }
 }
