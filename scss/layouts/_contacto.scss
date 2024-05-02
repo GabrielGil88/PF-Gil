@@ -5,11 +5,8 @@
 .conctactContainer {
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: row;
+    @include flex (row, center, 0, 30px);
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
     margin: 50px 0;
 }
 
@@ -31,7 +28,7 @@
 label {
     display: block;
     margin-bottom: 8px;
-    font-weight: bold;
+    @include texto (16px, flex-start, bold, $color-negro);
 }
 
 input {
@@ -72,26 +69,18 @@ textarea {
 /* botones de contacto */
 
 .linksBox {
+    @include flex (column, center, center, 30px);
     width: 100%;
-    gap: 30px;
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     margin-top: 50px;
 
     a {
+        @include flex (row, flex-start, center, 30px);
         text-decoration: none;
         color: black;
         width: 80%;
         padding: 10px 0;
-        gap: 30px;
-        display: flex;
-        flex-direction: row;
         cursor: pointer;
-        justify-content: flex-start;
-        align-items: center;
         border-radius: 8px;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     }
@@ -109,9 +98,7 @@ textarea {
 .facebook-button p,
 .whatsapp-button p {
     margin: 0;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
+    @include texto (16px, center, bold, $color-negro);
 }
 
 .instagram-button {

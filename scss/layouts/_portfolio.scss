@@ -4,10 +4,7 @@
     width: 100%;
     padding-top: 5%;
     border-bottom: #F9F07A 4px solid;
-    font-size: 24px;
-    color: #F9F07A;
-    font-weight: bold;
-    text-align: left;
+    @include texto (24px, left, bold, $color-amarillo);
     margin: 20px 0;
 }
 
@@ -58,10 +55,9 @@
 /* Galleria TALLERES con flex*/
 
 .galeriaTalleres {
-    display: flex;
-    gap: 10px;
+    @include flex (row, space-between, 0, 10px);
     flex-wrap: wrap;
-    justify-content: space-between;
+
 }
 
 .imagenGaleriaTaller {

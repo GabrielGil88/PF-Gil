@@ -150,6 +150,8 @@ header {
 .carousel-caption {
   display: flex;
   flex-direction: column;
+  justify-content: 0;
+  align-items: 0;
   gap: 10px;
 }
 .carousel-caption a {
@@ -159,12 +161,14 @@ header {
 
 .textoCarousel h2 {
   font-size: 40px;
+  text-align: center;
   font-weight: 900;
   color: #F9F07A;
   text-shadow: #000 0.1em 0.1em 0.2em;
 }
 .textoCarousel p {
   font-size: 18px;
+  text-align: center;
   font-weight: 500;
   color: #000;
 }
@@ -184,9 +188,11 @@ header {
 /*Estilo para el contenedor*/
 .cardContainer {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  padding: 100px 0;
+  align-items: center;
   gap: 3vh;
+  padding: 100px 0;
 }
 
 /* Estilo para la tarjeta */
@@ -200,6 +206,8 @@ header {
   background-color: #B7C9F2;
   display: flex;
   flex-direction: column;
+  justify-content: 0;
+  align-items: 0;
   gap: 1vw;
   transition: transform 0.5s ease-in-out;
 }
@@ -212,27 +220,30 @@ header {
 
 .card-img-overlay {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: 0;
+  gap: 0;
   margin: 10px;
-  color: #F9F07A;
 }
 .card-img-overlay h2 {
   position: absolute;
   bottom: 200px;
   font-size: 30px;
-  font-weight: 700;
   text-align: center;
+  font-weight: 700;
+  color: #F9F07A;
   text-shadow: #000000 0.1em 0.1em 0.2em;
   transition: transform 0.5s ease-in-out;
 }
 .card-img-overlay p {
   position: absolute;
-  color: #F9F07A;
   background-color: rgba(0, 0, 0, 0.5019607843);
-  font-weight: 500;
-  bottom: -20px;
   font-size: 16px;
   text-align: center;
+  font-weight: 500;
+  color: #F9F07A;
+  bottom: -20px;
   opacity: 0;
   transition: transform 0.5s ease-in-out;
 }
@@ -258,16 +269,19 @@ header {
 .testimonioBox {
   height: 500px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 0;
 }
 
 .testimonioContent {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px;
   gap: 2vh;
+  padding: 20px;
 }
 .testimonioContent img {
   width: 100%;
@@ -278,13 +292,14 @@ header {
   border-radius: 5%;
 }
 .testimonioContent p {
-  text-align: center;
   font-size: 18px;
+  text-align: center;
+  font-weight: 500;
   color: #000;
 }
 .testimonioContent h3 {
-  text-align: center;
   font-size: 24px;
+  text-align: center;
   font-weight: 600;
   color: #000;
 }
@@ -296,9 +311,10 @@ header {
   height: auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: 0;
   gap: 30px;
+  flex-wrap: wrap;
   margin: 50px 0;
 }
 
@@ -319,7 +335,10 @@ header {
 label {
   display: block;
   margin-bottom: 8px;
+  font-size: 16px;
+  text-align: flex-start;
   font-weight: bold;
+  color: #000;
 }
 
 input[type=text], input[type=email], input[type=tel] {
@@ -353,26 +372,26 @@ textarea {
 
 /* botones de contacto */
 .linksBox {
-  width: 100%;
-  gap: 30px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  flex-wrap: wrap;
   margin-top: 50px;
 }
 .linksBox a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
   text-decoration: none;
   color: black;
   width: 80%;
   padding: 10px 0;
-  gap: 30px;
-  display: flex;
-  flex-direction: row;
   cursor: pointer;
-  justify-content: flex-start;
-  align-items: center;
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -389,9 +408,10 @@ textarea {
 .facebook-button p,
 .whatsapp-button p {
   margin: 0;
-  text-align: center;
   font-size: 16px;
+  text-align: center;
   font-weight: bold;
+  color: #000;
 }
 
 .instagram-button {
@@ -428,13 +448,20 @@ textarea {
 }
 
 .talleresContent {
-  margin: 100px 0 100px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 0;
+  margin: 100px 0 100px;
 }
 
 .cardTalleres {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
   width: 500px;
   height: auto;
   color: #F9F07A;
@@ -442,27 +469,35 @@ textarea {
   border-radius: 5px;
   padding: 20px;
   margin: 20px;
-  gap: 20px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   transition: 0.5s;
 }
 .cardTalleres h2 {
   font-size: 40px;
-  font-weight: bold;
-  margin-bottom: 10px;
   text-align: center;
-  text-decoration: none;
-  font-family: "Montserrat";
+  font-weight: bold;
+  color: #F9F07A;
   font-variant: small-caps;
+  margin-bottom: 10px;
+}
+.cardTalleres h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #FB88B4;
 }
 .cardTalleres p {
-  font-size: 20px;
+  font-size: 18px;
+  text-align: justify;
+  font-weight: normal;
+  color: #F9F07A;
 }
 .cardTalleres ul {
-  text-align: start;
+  font-size: 18px;
+  text-align: left;
+  font-weight: normal;
+  color: #F9F07A;
+  font-variant: small-caps;
 }
 .cardTalleres:hover {
   transform: scale(1.1);
@@ -482,19 +517,19 @@ textarea {
   border-radius: 5%;
 }
 
-.sobremiContent h3 {
-  text-align: center;
-  text-decoration: none;
+.sobremiContent h2 {
   font-size: 40px;
-  font-family: "Montserrat";
+  text-align: center;
   font-weight: bold;
   color: #000;
+  text-decoration: none;
   font-variant: small-caps;
   padding: 20px 0 20px;
 }
 .sobremiContent p {
-  text-align: justify;
   font-size: 18px;
+  text-align: justify;
+  font-weight: normal;
   color: #000;
 }
 
@@ -504,9 +539,9 @@ textarea {
   padding-top: 5%;
   border-bottom: #F9F07A 4px solid;
   font-size: 24px;
-  color: #F9F07A;
-  font-weight: bold;
   text-align: left;
+  font-weight: bold;
+  color: #F9F07A;
   margin: 20px 0;
 }
 
@@ -556,9 +591,11 @@ textarea {
 /* Galleria TALLERES con flex*/
 .galeriaTalleres {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: 0;
   gap: 10px;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .imagenGaleriaTaller {

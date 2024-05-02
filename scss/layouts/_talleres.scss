@@ -20,13 +20,12 @@
 
 
 .talleresContent {
+    @include flex (row, center, center, 0);
     margin: 100px 0 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .cardTalleres {
+    @include flex (column, space-around, center, 20px);
     width: 500px;
     height: auto;  
     color: $color-amarillo;
@@ -34,29 +33,26 @@
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
-    gap: 20px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     transition: 0.5s;
 
     h2 {
-        font-size: 40px;
-        font-weight: bold;
-        margin-bottom: 10px;
-        text-align: center;
-        text-decoration: none;
-        font-family: "Montserrat";
+        @include texto(40px, center, bold, $color-amarillo);
         font-variant: small-caps;
+        margin-bottom: 10px;
+    }
+
+    h3{
+        @include texto(20px, center, bold, $color-rosa);
     }
 
     p {
-        font-size: 20px;
+        @include texto(18px, justify, normal, $color-amarillo);
     }
 
     ul{
-        text-align: start;
+        @include texto(18px, left, normal, $color-amarillo);
+        font-variant: small-caps;
     }
 
     &:hover {
