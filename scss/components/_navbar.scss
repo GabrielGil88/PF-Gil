@@ -12,7 +12,7 @@ header {
 }
 
 .logo {
-    @include flex (column, center , center, 0);
+    @include flex (column, center, center, 0);
     text-decoration: none;
 
     img {
@@ -21,7 +21,7 @@ header {
     }
 
     h1 {
-        @include texto (16px, center, 700 , $color-dark);
+        @include texto (16px, center, 700, $color-dark);
         font-variant: small-caps;
         margin-top: -10px;
     }

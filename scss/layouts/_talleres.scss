@@ -27,7 +27,7 @@
 .cardTalleres {
     @include flex (column, space-around, center, 20px);
     width: 500px;
-    height: auto;  
+    height: auto;
     color: $color-primary;
     background-color: $color-fondoDark;
     border-radius: 5px;
@@ -42,7 +42,7 @@
         margin-bottom: 10px;
     }
 
-    h3{
+    h3 {
         @include texto(20px, center, bold, $color-secondary);
     }
 
@@ -50,7 +50,7 @@
         @include texto(18px, justify, normal, $color-primary);
     }
 
-    ul{
+    ul {
         @include texto(18px, left, normal, $color-primary);
         font-variant: small-caps;
     }

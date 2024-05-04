@@ -54,7 +54,7 @@ textarea {
     resize: none;
 }
 
-/* Botones */   
+/* Botones */
 .form-botones {
     text-align: right;
 }
@@ -89,7 +89,7 @@ textarea {
 .instagram-button img,
 .facebook-button img,
 .whatsapp-button img {
-    @include imagen (30px, 30px, contain , center);
+    @include imagen (30px, 30px, contain, center);
     margin: 0px 10px;
 }
 

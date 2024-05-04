@@ -1,5 +1,5 @@
-.btn-main{
-    background-color:$color-primary;
+.btn-main {
+    background-color: $color-primary;
     @include texto (16px, center, 500, $color-dark);
     padding: 8px 16px;
     margin-right: 10px;
@@ -9,7 +9,7 @@
     text-decoration: none;
     box-shadow: $color-fondoDark 0px 2px 2px;
 
-    &:hover{
+    &:hover {
         background-color: $color-primaryDark;
         box-shadow: $color-fondoDark 2px 4px 4px;
 
