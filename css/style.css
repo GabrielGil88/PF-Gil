@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-
 * {
   margin: 0;
   padding: 0;
@@ -55,7 +54,6 @@ header {
   gap: 0;
   text-decoration: none;
 }
-
 .logo img {
   width: 250px;
   height: auto;
@@ -63,7 +61,6 @@ header {
   object-position: center;
   max-width: 250px;
 }
-
 .logo h1 {
   font-size: 16px;
   text-align: center;
@@ -138,24 +135,47 @@ header {
   text-decoration: none;
   box-shadow: rgba(0, 0, 0, 0.5019607843) 0px 2px 2px;
 }
-
 .btn-main:hover {
   background-color: #f3d702;
   box-shadow: rgba(0, 0, 0, 0.5019607843) 2px 4px 4px;
 }
 
 /* --------------------- SUBTITULOS --------------------- */
-.subtitulo h2 {
-  font-size: 40px;
-  text-align: center;
-  font-weight: bold;
-  color: #000000;
-  text-decoration: none;
+.subtitulo {
   font-family: "Montserrat";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
   font-variant: small-caps;
-  padding: 50px 0 0;
+  padding: 150px 0 50px;
 }
 
+.subtitulo h2 {
+  position: absolute;
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+
+.borde {
+  color: #FB88B4;
+  text-shadow: -1px -1px 0 #F9F07A, 1px -1px 0 #F9F07A, -1px 1px 0 #F9F07A, 1px 1px 0 #F9F07A;
+}
+
+.laOla {
+  color: #F9F07A;
+  animation: laOla 2s ease-in-out infinite;
+}
+
+@keyframes laOla {
+  0%, 100% {
+    clip-path: polygon(0% 47%, 10% 48%, 33% 54%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50% {
+    clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
 /* --------------------- CAROUSEL --------------------- */
 /* tamaño de contenedor */
 .carouselContainer {
@@ -170,7 +190,6 @@ header {
   align-items: 0;
   gap: 10px;
 }
-
 .carousel-caption a {
   width: max-content;
   margin: 10px 0px 50px;
@@ -183,14 +202,12 @@ header {
   color: #F9F07A;
   text-shadow: #000000 0.1em 0.1em 0.2em;
 }
-
 .textoCarousel p {
   font-size: 18px;
   text-align: 0;
   font-weight: 500;
   color: #000000;
 }
-
 .textoCarousel .textoClaro {
   color: #FB88B4;
 }
@@ -230,7 +247,6 @@ header {
   gap: 1vw;
   transition: transform 0.5s ease-in-out;
 }
-
 .homeCard img {
   width: 100%;
   height: 100%;
@@ -247,7 +263,6 @@ header {
   gap: 0;
   margin: 10px;
 }
-
 .card-img-overlay h2 {
   position: absolute;
   bottom: 200px;
@@ -258,7 +273,6 @@ header {
   text-shadow: #000000 0.1em 0.1em 0.1em;
   transition: transform 0.5s ease-in-out;
 }
-
 .card-img-overlay p {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5019607843);
@@ -277,14 +291,12 @@ header {
   background-color: #FB88B4;
   transition: transform 0.5s ease-in-out;
 }
-
 .homeCard:hover .card-img-overlay p {
   display: block;
   opacity: 1;
   transform: translateY(-20px);
   transition: transform 0.5s ease-in-out;
 }
-
 .homeCard:hover .card-img-overlay h2 {
   transform: translateY(-50px);
   transition: transform 0.5s ease-in-out;
@@ -308,7 +320,6 @@ header {
   gap: 2vh;
   padding: 20px;
 }
-
 .testimonioContent img {
   width: 100%;
   height: 250px;
@@ -317,14 +328,12 @@ header {
   max-width: 250px;
   border-radius: 5%;
 }
-
 .testimonioContent p {
   font-size: 18px;
   text-align: center;
   font-weight: 500;
   color: #000000;
 }
-
 .testimonioContent h3 {
   font-size: 24px;
   text-align: center;
@@ -369,9 +378,7 @@ label {
   color: #000000;
 }
 
-input[type=text],
-input[type=email],
-input[type=tel] {
+input[type=text], input[type=email], input[type=tel] {
   width: 100%;
   padding: 10px;
   border: 1px solid #515151;
@@ -411,7 +418,6 @@ textarea {
   flex-wrap: wrap;
   margin-top: 50px;
 }
-
 .linksBox a {
   display: flex;
   flex-direction: row;
@@ -470,7 +476,6 @@ textarea {
   height: auto;
   overflow: hidden;
 }
-
 .talleresContainer video {
   position: absolute;
   top: 50%;
@@ -506,7 +511,6 @@ textarea {
   text-align: center;
   transition: 0.5s;
 }
-
 .cardTalleres h2 {
   font-size: 40px;
   text-align: center;
@@ -515,21 +519,18 @@ textarea {
   font-variant: small-caps;
   margin-bottom: 10px;
 }
-
 .cardTalleres h3 {
   font-size: 20px;
   text-align: center;
   font-weight: bold;
   color: #FB88B4;
 }
-
 .cardTalleres p {
   font-size: 18px;
   text-align: justify;
   font-weight: normal;
   color: #F9F07A;
 }
-
 .cardTalleres ul {
   font-size: 18px;
   text-align: left;
@@ -537,7 +538,6 @@ textarea {
   color: #F9F07A;
   font-variant: small-caps;
 }
-
 .cardTalleres:hover {
   transform: scale(1.1);
 }
@@ -561,7 +561,6 @@ textarea {
   align-items: center;
   gap: 30px;
 }
-
 .sobremiImg img {
   width: 100%;
   height: 80vh;
@@ -579,7 +578,6 @@ textarea {
   font-variant: small-caps;
   padding: 20px 0 20px;
 }
-
 .sobremiContent p {
   font-size: 18px;
   text-align: justify;
@@ -616,7 +614,6 @@ textarea {
   border-radius: 8px;
   cursor: pointer;
 }
-
 .imagenGaleria img {
   width: 100%;
   height: 100%;
@@ -661,7 +658,6 @@ textarea {
   border: 2px solid #F9F07A;
   border-radius: 8px;
 }
-
 .imagenGaleriaTaller img {
   width: 100%;
   height: 100%;
@@ -672,110 +668,91 @@ textarea {
 
 /* --------------------- RESPONSIVE --------------------- */
 @media (max-width: 992px) {
-
   /* cambio en organizacion de las CARD en Sobre Mi */
   .sobremiBox {
     flex-direction: column;
     padding: 20px;
     gap: 20px;
   }
-
   .sobremiImg img {
     height: 100%;
   }
-
   .sobremiContent h3 {
     font-size: 30px;
     padding: 10px;
   }
-
   .sobremiContent p {
     font-size: 16px;
   }
-
   /* cambio en carousel */
   .carousel-caption {
     margin: 0;
     bottom: 8%;
     gap: 0;
   }
-
   .carousel-caption a {
     width: max-content;
     margin: 0;
   }
-
   .textoCarousel {
     justify-self: center;
   }
-
   .textoCarousel h2 {
     font-size: 30px;
   }
-
   .textoCarousel p {
     font-size: 16px;
     margin-bottom: 0;
   }
-
   .carouselImg {
     object-position: left;
   }
 }
-
 @media (max-width: 840px) {
-
   /* cambio en organizacion de las CARDS en Home*/
   .cardContainer {
     flex-wrap: wrap;
   }
 }
-
 @media (max-width: 767px) {
   .navbarBox {
     flex-direction: row;
   }
-
   /* cambio en el footer */
   .footerContent {
     flex-direction: column;
   }
-
   /* cambio en testimonio card */
   .testimonioBox {
     height: 750px;
   }
-
   .testimonioContent {
     flex-direction: column;
   }
-
   .testimonioContent img {
     height: 200px;
     align-self: center;
     border-radius: 100%;
   }
-
   /* cambio en el tamaño de las imagenes del PORTFOLIO */
   .wide {
     grid-column: span 1;
   }
-
   .large {
     grid-column: span 1;
     grid-row: span 1;
     height: 50vh;
   }
-
   .talleresContent {
     flex-direction: column;
   }
-
   .cardTalleres {
     width: 80%;
   }
+  .subtitulo h2 {
+    font-size: 3.5rem;
+  }
 }
-
 @media (max-width: 425px) {
   .logo {
     width: 80%;

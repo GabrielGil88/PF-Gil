@@ -114,6 +114,12 @@
   .cardTalleres {
     width: 80%;
   }
+
+  // cambio en subtitulos
+  .subtitulo h2 {
+    font-size: 3.5rem;
+
+  }
 }
 
 @media (max-width: 425px) {
@@ -122,4 +128,5 @@
   .logo {
     width: 80%;
   }
+
 }

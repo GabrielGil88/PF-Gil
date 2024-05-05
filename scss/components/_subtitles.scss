@@ -1,8 +1,41 @@
 /* --------------------- SUBTITULOS --------------------- */
-.subtitulo h2 {
-    @include texto (40px, center, bold, $color-dark);
-    text-decoration: none;
+
+.subtitulo {
     font-family: "Montserrat";
+    @include flex (row, center, center, 0);
     font-variant: small-caps;
-    padding: 50px 0 0;
+    padding: 150px 0 50px;
+}
+
+.subtitulo h2 {
+    position: absolute;
+    font-size: 4.5rem;
+    font-weight: 800;
+}
+
+.borde {
+    color: $color-secondary;
+    text-shadow:
+        -1px -1px 0 $color-primary,
+        1px -1px 0 $color-primary,
+        -1px 1px 0 $color-primary,
+        1px 1px 0 $color-primary;
+}
+
+.laOla {
+    color: $color-primary;
+    animation: laOla 2s ease-in-out infinite;
+}
+
+
+@keyframes laOla {
+
+    0%,
+    100% {
+        clip-path: polygon(0% 47%, 10% 48%, 33% 54%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
 }
