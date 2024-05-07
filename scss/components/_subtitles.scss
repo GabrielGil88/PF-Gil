@@ -4,27 +4,28 @@
     font-family: "Montserrat";
     @include flex (row, center, center, 0);
     font-variant: small-caps;
-    padding: 150px 0 50px;
+    padding: 50px 0 50px;
 }
 
 .subtitulo h2 {
     position: absolute;
     font-size: 4.5rem;
     font-weight: 800;
+    text-shadow: $color-dark 2px 2px 8px;
+    padding: 10px;
 }
 
 .borde {
+    color: $color-tertiary;
+}
+
+.bordeAlternative {
     color: $color-secondary;
-    text-shadow:
-        -1px -1px 0 $color-primary,
-        1px -1px 0 $color-primary,
-        -1px 1px 0 $color-primary,
-        1px 1px 0 $color-primary;
 }
 
 .laOla {
     color: $color-primary;
-    animation: laOla 2s ease-in-out infinite;
+    animation: laOla 3s ease-in-out infinite;
 }
 
 

@@ -75,6 +75,15 @@ header {
   font-variant: small-caps;
 }
 
+.nav-link {
+  transition: 0.5s;
+}
+.nav-link:hover {
+  background-color: #B7C9F2;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
 .navbarBox {
   display: flex;
   flex-direction: column;
@@ -149,23 +158,28 @@ header {
   align-items: center;
   gap: 0;
   font-variant: small-caps;
-  padding: 150px 0 50px;
+  padding: 50px 0 50px;
 }
 
 .subtitulo h2 {
   position: absolute;
   font-size: 4.5rem;
   font-weight: 800;
+  text-shadow: #000000 2px 2px 8px;
+  padding: 10px;
 }
 
 .borde {
+  color: #9195F6;
+}
+
+.bordeAlternative {
   color: #FB88B4;
-  text-shadow: -1px -1px 0 #F9F07A, 1px -1px 0 #F9F07A, -1px 1px 0 #F9F07A, 1px 1px 0 #F9F07A;
 }
 
 .laOla {
   color: #F9F07A;
-  animation: laOla 2s ease-in-out infinite;
+  animation: laOla 3s ease-in-out infinite;
 }
 
 @keyframes laOla {
@@ -303,6 +317,10 @@ header {
 }
 
 /* --------------------- TESTIMONIOS --------------------- */
+.testimonioContainer {
+  padding-top: 50px;
+}
+
 .testimonioBox {
   height: 500px;
   display: flex;
@@ -310,6 +328,11 @@ header {
   justify-content: center;
   align-items: center;
   gap: 0;
+}
+
+.cardTestimonio {
+  box-shadow: #515151 2px 2px 8px;
+  border-radius: 8px;
 }
 
 .testimonioContent {
@@ -343,7 +366,11 @@ header {
 
 /* --------------------- CONTACTO --------------------- */
 /* Contenedor */
-.conctactContainer {
+.contactContainer {
+  padding: 50px 0;
+}
+
+.contactContain {
   width: 100%;
   height: auto;
   display: flex;
@@ -475,6 +502,7 @@ textarea {
   width: 100%;
   height: auto;
   overflow: hidden;
+  padding: 50px;
 }
 .talleresContainer video {
   position: absolute;
@@ -516,7 +544,7 @@ textarea {
   text-align: center;
   font-weight: bold;
   color: #F9F07A;
-  font-variant: small-caps;
+  text-shadow: #000000 2px 2px 4px;
   margin-bottom: 10px;
 }
 .cardTalleres h3 {
@@ -548,7 +576,7 @@ textarea {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 20px;
   border-radius: 20px;
   margin: 50px 0;
   padding: 50px;
@@ -569,32 +597,32 @@ textarea {
   border-radius: 20px;
 }
 
-.sobremiContent h2 {
-  font-size: 40px;
-  text-align: center;
-  font-weight: bold;
-  color: #000000;
-  text-decoration: none;
-  font-variant: small-caps;
-  padding: 20px 0 20px;
-}
 .sobremiContent p {
   font-size: 18px;
   text-align: justify;
   font-weight: normal;
   color: #000000;
+  padding-top: 20px;
 }
 
 /* --------------------- PORTFOLIO --------------------- */
-.nombreSeccion {
-  width: 100%;
-  padding-top: 5%;
-  border-bottom: #F9F07A 4px solid;
-  font-size: 24px;
+.portfolioContainer {
+  padding-top: 50px;
+}
+
+.nombreSeccion h3 {
+  font-size: 36px;
   text-align: left;
   font-weight: bold;
   color: #F9F07A;
-  margin: 20px 0;
+  text-shadow: #000000 2px 2px 4px;
+  margin: 50px 10px 0;
+}
+.nombreSeccion .subrayadoSeccion {
+  margin: 0 0 30px;
+  width: 100%;
+  height: 10px;
+  background-image: linear-gradient(to right, #fd004c, #fe9000, #fff020, #3edf4b, #3363ff, #b102b7);
 }
 
 .galeriaInfantiles,
@@ -604,6 +632,7 @@ textarea {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 10px;
+  padding-bottom: 20px;
 }
 
 .imagenGaleria {

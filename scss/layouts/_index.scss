@@ -115,10 +115,22 @@
 
 /* --------------------- TESTIMONIOS --------------------- */
 
+
+.testimonioContainer {
+    padding-top: 50px;    
+}
+
 .testimonioBox {
     height: 500px;
     @include flex (row, center, center, 0);
 }
+
+.cardTestimonio {
+    box-shadow: $color-midDark 2px 2px 8px;
+    border-radius: 8px;
+}
+
+
 
 .testimonioContent {
     @include flex (row, center, center, 2vh);

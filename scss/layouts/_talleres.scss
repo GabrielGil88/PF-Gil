@@ -6,6 +6,7 @@
     width: 100%;
     height: auto;
     overflow: hidden;
+    padding: 50px;
 
     video {
         position: absolute;
@@ -37,8 +38,8 @@
     transition: 0.5s;
 
     h2 {
-        @include texto(40px, center, bold, $color-primary);
-        font-variant: small-caps;
+        @include texto (40px, center, bold, $color-primary);
+        text-shadow: $color-dark 2px 2px 4px;
         margin-bottom: 10px;
     }
 

@@ -32,6 +32,16 @@ header {
     font-variant: small-caps;
 }
 
+.nav-link {
+    transition: 0.5s;
+    &:hover {
+        background-color: $color-quaternary;
+        border-radius: 20px;
+        transition: 0.5s;
+    }
+}
+
+
 .navbarBox {
     @include flex (column, space-around, center, 0);
     width: 100%;

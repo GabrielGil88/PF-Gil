@@ -2,7 +2,13 @@
 
 /* Contenedor */
 
-.conctactContainer {
+
+.contactContainer {
+    padding: 50px 0;
+}
+
+
+.contactContain {
     width: 100%;
     height: auto;
     @include flex (row, center, 0, 30px);
