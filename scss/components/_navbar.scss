@@ -27,17 +27,24 @@ header {
     }
 }
 
+.nav-link.active {
+    font-weight: 800;
+}
+
+
 .nav-item {
-    color: $color-dark;
+    @include texto (22px, center, 600, 0);
     font-variant: small-caps;
 }
 
 .nav-link {
+    border-radius: 10px;
     transition: 0.5s;
     &:hover {
         background-color: $color-quaternary;
-        border-radius: 20px;
-        transition: 0.5s;
+        transition: ease-in-out 0.5s;
+        padding-top: 0;
+        padding-bottom: 12px;
     }
 }
 
