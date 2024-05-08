@@ -84,7 +84,7 @@ textarea {
         @include flex (row, flex-start, center, 30px);
         text-decoration: none;
         color: $color-dark;
-        width: 80%;
+        width: 70%;
         padding: 10px 0;
         cursor: pointer;
         border-radius: 8px;
@@ -92,18 +92,22 @@ textarea {
     }
 }
 
-.instagram-button img,
-.facebook-button img,
-.whatsapp-button img {
-    @include imagen (30px, 30px, contain, center);
-    margin: 0px 10px;
-}
+.instagram-button,
+.facebook-button,
+.whatsapp-button{ 
+    transition: 1s;
 
-.instagram-button p,
-.facebook-button p,
-.whatsapp-button p {
-    margin: 0;
-    @include texto (16px, center, bold, $color-dark);
+    img {
+        @include imagen (30px, 30px, contain, center);
+        margin: 0px 10px;
+    }
+
+    p {
+        @include texto (20px, center, bold, $color-dark);
+        margin: 0;
+        font-variant: small-caps;
+    }
+    
 }
 
 .instagram-button {
@@ -119,5 +123,6 @@ textarea {
 }
 
 .linksBox a:hover {
-    width: 100%;
+    width: 80%;
+    transition: 1s;
 }

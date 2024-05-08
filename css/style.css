@@ -87,7 +87,6 @@ header {
   transition: 0.5s;
 }
 .nav-link:hover {
-  background-color: #B7C9F2;
   transition: ease-in-out 0.5s;
   padding-top: 0;
   padding-bottom: 12px;
@@ -462,13 +461,18 @@ textarea {
   gap: 30px;
   text-decoration: none;
   color: #000000;
-  width: 80%;
+  width: 70%;
   padding: 10px 0;
   cursor: pointer;
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.instagram-button,
+.facebook-button,
+.whatsapp-button {
+  transition: 1s;
+}
 .instagram-button img,
 .facebook-button img,
 .whatsapp-button img {
@@ -478,15 +482,15 @@ textarea {
   object-position: center;
   margin: 0px 10px;
 }
-
 .instagram-button p,
 .facebook-button p,
 .whatsapp-button p {
-  margin: 0;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
   font-weight: bold;
   color: #000000;
+  margin: 0;
+  font-variant: small-caps;
 }
 
 .instagram-button {
@@ -502,7 +506,8 @@ textarea {
 }
 
 .linksBox a:hover {
-  width: 100%;
+  width: 80%;
+  transition: 1s;
 }
 
 /* --------------------- TALLERES --------------------- */
