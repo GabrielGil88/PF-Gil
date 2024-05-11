@@ -7,25 +7,25 @@ $color-quaternary: #B7C9F2;
 $color-light: #FFFFFF;
 $color-midDark: #515151;
 $color-dark: #000000;
-$color-fondoDark: #00000080;
+$color-bgDark: #00000080;
 
 
-.bg-amarillo {
+.bg-yellow{
     background-color: $color-primary;
 }
 
-.bg-rosa {
+.bg-pink {
     background-color: $color-secondary;
 }
 
-.bg-azul {
+.bg-blue {
     background-color: $color-tertiary;
 }
 
-.bg-celeste {
+.bg-ligthblue {
     background-color: $color-quaternary;
 }
 
-.bg-gris {
+.bg-grey {
     background-color: $color-midDark;
 }

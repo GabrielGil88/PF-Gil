@@ -7,6 +7,11 @@
     height: 70vh;
 }
 
+// modifico distacia de flechas indicadoras
+
+.carousel-control-next, .carousel-control-prev {
+    width: 10%;
+}
 
 .carousel-caption {
     @include flex (column, 0, 0, 10px);
@@ -83,7 +88,7 @@
 
     p {
         position: absolute;
-        background-color: $color-fondoDark;
+        background-color: $color-bgDark;
         @include texto (16px, center, 500, $color-primary);
         bottom: -20px;
         opacity: 0;
@@ -117,7 +122,7 @@
 
 
 .testimonioContainer {
-    padding-top: 50px;    
+    padding-top: 50px;
 }
 
 .testimonioBox {
@@ -130,11 +135,10 @@
     border-radius: 8px;
 }
 
-
-
 .testimonioContent {
     @include flex (row, center, center, 2vh);
-    padding: 20px;
+    height: 300px;
+    padding: 20px 50px;
 
     img {
         @include imagen (100%, 250px, cover, center);

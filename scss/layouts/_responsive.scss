@@ -27,7 +27,7 @@
     }
   }
 
-  /* cambio en carousel */
+  /* cambio en carousel del index */
   .carousel-caption {
     margin: 0;
     bottom: 8%;
@@ -67,6 +67,10 @@
 }
 
 @media (max-width: 767px) {
+  // cambio en el botón flotante de whatsapp 
+  .btn-whatsapp img{
+    width: 60px;
+  }
 
   // cambio en el navbar
   .navbarBox {
@@ -86,9 +90,11 @@
 
   .testimonioContent {
     flex-direction: column;
+    padding: 10px;
+    height: 50%;
 
     img {
-      height: 200px;
+      height: 250px;
       align-self: center;
       border-radius: 100%;
     }

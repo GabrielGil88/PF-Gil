@@ -21,7 +21,7 @@
 
 <body>
     <header>
-        <nav class="navbar bg-amarillo navbar-expand-md">
+        <nav class="navbar bg-yellow navbar-expand-md">
             <div class="navbarBox">
                 <a href="../index.html" class="logo">
                     <img src="../images/logo.png" alt="Logo de Colour Palette">
@@ -34,22 +34,19 @@
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header bg-amarillo">
+                    <div class="offcanvas-header bg-yellow">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Colour Palette</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body bg-amarillo">
+                    <div class="offcanvas-body bg-yellow">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item"><a class="nav-link px-4" aria-current="page"
                                     href="../index.html">inicio</a></li>
                             <li class="nav-item"><a class="nav-link px-4" href="sobreMi.html">sobre
                                     mi</a></li>
-                            <li class="nav-item"><a class="nav-link px-4"
-                                    href="portfolio.html">portfolio</a></li>
-                            <li class="nav-item"><a class="nav-link px-4 "
-                                    href="talleres.html">talleres</a></li>
-                            <li class="nav-item"><a class="nav-link px-4 active"
-                                    href="contacto.html">contacto</a></li>
+                            <li class="nav-item"><a class="nav-link px-4" href="portfolio.html">portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link px-4 " href="talleres.html">talleres</a></li>
+                            <li class="nav-item"><a class="nav-link px-4 active" href="contacto.html">contacto</a></li>
                         </ul>
                     </div>
                 </div>
@@ -61,8 +58,8 @@
         <section class="container-fluid contactContainer">
             <!-- subtitulo -->
             <div class="subtitulo">
-                <h2 class="borde">contacto</h2>
-                <h2 class="laOla">contacto</h2>
+                <h2 class="bgSubtitle">contacto</h2>
+                <h2 class="wave">contacto</h2>
             </div>
             <div class="contactContain">
                 <article class="formularioContact">
@@ -92,34 +89,34 @@
                     </form>
                 </article>
                 <div class="contactBox">
-                    <!-- Mapa de ubicación -->
-                    <article>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26313.735758345327!2d-58.549189460294656!3d-34.472019742131174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb03cd891437f%3A0xab3b49e671350275!2sSan%20Isidro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1710393013726!5m2!1ses!2sar"
-                            width="100%" height="400" style="border:0;" title="Ubicación" allowfullscreen=""
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </article>
                     <!-- botones de contacto -->
-                    <article class="linksBox">
-                        <a href="https://www.instagram.com" class="instagram-button">
+                    <div class="linksBox">
+                        <a href="https://www.instagram.com/colourpalettemaquillaje/" class="instagram-button"
+                            target="_blank">
                             <img src="../images/logos/logoinstagram.png" alt="Icono instagram">
-                            <p>link a mi instagram</p>
+                            <p>@colourpalettemaquillaje</p>
                         </a>
-                        <a href="https://www.facebook.com" class="facebook-button">
+                        <a href="https://www.facebook.com/kimmaquillaje" class="facebook-button" target="_blank">
                             <img src="../images/logos/logofacebook.png" alt="Icono">
-                            <p>link a mi facebook</p>
+                            <p>/kimmaquillaje</p>
                         </a>
-                        <a href="https://www.whatsapp.com" class="whatsapp-button">
+                        <a href="https://wa.me/+1234567890" class="whatsapp-button" target="_blank">
                             <img src="../images/logos/logowhatsapp.png" alt="Icono whatsapp">
-                            <p>contactarme por whatsapp</p>
+                            <p>+54 11 1234 5678 whatsapp</p>
                         </a>
-                    </article>
+                    </div>
+                    <!-- Mapa de ubicación -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26313.735758345327!2d-58.549189460294656!3d-34.472019742131174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb03cd891437f%3A0xab3b49e671350275!2sSan%20Isidro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1710393013726!5m2!1ses!2sar"
+                        width="100%" height="400" style="border:0;" title="Ubicación" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="container-fluid flex-wrap bg-gris py-5 border-top footer mb-0">
+    <footer class="container-fluid flex-wrap bg-grey py-5 border-top footer mb-0">
         <div class="d-flex justify-content-between col-8 footerContent">
             <div class="d-flex gap-2 h5 mb-0 location">
                 <i class="bi bi-geo-alt-fill"></i>
@@ -127,17 +124,19 @@
             </div>
             <ul class="d-flex justify-content-center list-unstyled mb-0">
                 <li class="m-3">
-                    <a class="iconosFooter" href="http://x.com" aria-label="Enlace a Twitter">
+                    <a class="iconosFooter" href="http://x.com" target="_blank" aria-label="Enlace a Twitter">
                         <i class="bi bi-twitter"></i>
                     </a>
                 </li>
                 <li class="m-3">
-                    <a class="iconosFooter" href="http://instagram.com" aria-label="Enlace a Instagram">
+                    <a class="iconosFooter" href="https://www.instagram.com/colourpalettemaquillaje/" target="_blank"
+                        aria-label="Enlace a Instagram">
                         <i class="bi bi-instagram"></i>
                     </a>
                 </li>
                 <li class="m-3">
-                    <a class="iconosFooter" href="http://facebook.com" aria-label="Enlace a Facebook">
+                    <a class="iconosFooter" href="https://www.facebook.com/kimmaquillaje" target="_blank"
+                        aria-label="Enlace a Facebook">
                         <i class="bi bi-facebook"></i>
                     </a>
                 </li>

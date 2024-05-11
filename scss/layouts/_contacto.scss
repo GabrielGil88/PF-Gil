@@ -1,12 +1,9 @@
 /* --------------------- CONTACTO --------------------- */
 
 /* Contenedor */
-
-
 .contactContainer {
     padding: 50px 0;
 }
-
 
 .contactContain {
     width: 100%;
@@ -17,14 +14,13 @@
 }
 
 /* Formulario */
-
 .formularioContact {
     width: 100%;
     max-width: 500px;
     padding: 20px;
     background-color: $color-secondary;
+    box-shadow: $color-midDark 2px 2px 8px;
     border-radius: 8px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
@@ -66,25 +62,29 @@ textarea {
 }
 
 /* container Map & Links */
-
 .contactBox {
+    @include flex (column, 0, center, 30px);
     width: 100%;
     max-width: 500px;
+
 }
 
 /* botones de contacto */
-
 .linksBox {
-    @include flex (column, center, center, 30px);
+    @include flex (column, center, center, 20px);
     width: 100%;
-    flex-wrap: wrap;
-    margin-top: 50px;
+    max-width: 500px;
+    height: 300px;
+    padding: 30px;
+    background-color: $color-secondary;
+    box-shadow: $color-midDark 2px 2px 8px;
+    border-radius: 8px;
 
     a {
         @include flex (row, flex-start, center, 30px);
         text-decoration: none;
         color: $color-dark;
-        width: 70%;
+        width: 80%;
         padding: 10px 0;
         cursor: pointer;
         border-radius: 8px;
@@ -94,7 +94,7 @@ textarea {
 
 .instagram-button,
 .facebook-button,
-.whatsapp-button{ 
+.whatsapp-button {
     transition: 1s;
 
     img {
@@ -107,11 +107,11 @@ textarea {
         margin: 0;
         font-variant: small-caps;
     }
-    
+
 }
 
 .instagram-button {
-    background-color: rgb(217, 71, 207);
+    background-color: rgb(231, 89, 221);
 }
 
 .facebook-button {
@@ -123,6 +123,6 @@ textarea {
 }
 
 .linksBox a:hover {
-    width: 80%;
+    width: 90%;
     transition: 1s;
 }

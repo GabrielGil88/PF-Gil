@@ -15,21 +15,21 @@
     padding: 10px;
 }
 
-.borde {
+.bgSubtitle {
     color: $color-tertiary;
 }
 
-.bordeAlternative {
+.bgSubtitleAlternative {
     color: $color-secondary;
 }
 
-.laOla {
+.wave {
     color: $color-primary;
-    animation: laOla 3s ease-in-out infinite;
+    animation: wave 3s ease-in-out infinite;
 }
 
 
-@keyframes laOla {
+@keyframes wave {
 
     0%,
     100% {
