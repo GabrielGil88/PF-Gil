@@ -31,7 +31,6 @@ header {
     font-weight: 800;
 }
 
-
 .nav-item {
     @include texto (22px, center, 600, 0);
     font-variant: small-caps;
@@ -40,13 +39,14 @@ header {
 .nav-link {
     border-radius: 10px;
     transition: 0.5s;
+
     &:hover {
-        transition: ease-in-out 0.5s;
-        padding-top: 0;
-        padding-bottom: 12px;
+        transition: ease-in-out 0.3s;
+        padding-top: 4px;
+        padding-bottom: 8px;
+        background-image: linear-gradient(to top, $color-primaryDark, transparent);
     }
 }
-
 
 .navbarBox {
     @include flex (column, space-around, center, 0);

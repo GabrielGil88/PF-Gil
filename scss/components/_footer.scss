@@ -1,18 +1,28 @@
 /* --------------------- FOOTER --------------------- */
 
+.footerContainer {
+    @include flex (column, center, center, 0);
+    flex-wrap: wrap;
+    padding: 80px 0;
+    margin: 0;
+}
+
+.footerContent {
+    @include flex (row, space-evenly, center, 0);
+    width: 80%;
+    flex-wrap: wrap;
+}
+
 .derechos {
     @include texto (16px, center, bold, $color-primary);
     margin-top: 5%;
-
 }
 
-.footer {
-    @include flex (column, center, center, 0);
-}
 
 .location {
-    @include flex (row, center, center, 0);
-    color: $color-primary;
+    @include flex (row, center, center, 10px);
+    @include texto (20px, center, normal, $color-primary);
+    margin-bottom: 20px;
 }
 
 .location p {
@@ -21,8 +31,15 @@
 
 
 /* iconos */
+.footerIconList {
+    @include flex (row, center, center, 10px);
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
 .iconosFooter {
-    color: $color-primary;
-    font-size: 24px;
+    @include texto (24px, center, normal, $color-primary);
+    margin: 20px;
     text-decoration: none;
 }

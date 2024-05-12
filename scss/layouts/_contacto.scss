@@ -1,8 +1,7 @@
 /* --------------------- CONTACTO --------------------- */
-
 /* Contenedor */
 .contactContainer {
-    padding: 50px 0;
+    padding-top: 50px;
 }
 
 .contactContain {
@@ -75,7 +74,6 @@ textarea {
     width: 100%;
     max-width: 500px;
     height: 300px;
-    padding: 30px;
     background-color: $color-secondary;
     box-shadow: $color-midDark 2px 2px 8px;
     border-radius: 8px;
@@ -84,7 +82,7 @@ textarea {
         @include flex (row, flex-start, center, 30px);
         text-decoration: none;
         color: $color-dark;
-        width: 80%;
+        width: 70%;
         padding: 10px 0;
         cursor: pointer;
         border-radius: 8px;
@@ -96,18 +94,15 @@ textarea {
 .facebook-button,
 .whatsapp-button {
     transition: 1s;
-
     img {
         @include imagen (30px, 30px, contain, center);
         margin: 0px 10px;
     }
-
     p {
         @include texto (20px, center, bold, $color-dark);
         margin: 0;
         font-variant: small-caps;
     }
-
 }
 
 .instagram-button {
@@ -123,6 +118,7 @@ textarea {
 }
 
 .linksBox a:hover {
-    width: 90%;
+    width: 75%;
+    background-image: linear-gradient(to top, $color-primary, transparent);
     transition: 1s;
 }

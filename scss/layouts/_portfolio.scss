@@ -1,17 +1,19 @@
 /* --------------------- PORTFOLIO --------------------- */
-.portfolioContainer{
+.portfolioContainer {
     padding-top: 50px;
 }
 
-.nombreSeccion {
 
+// Subtitulos
+.sectionName {
     h3 {
         @include texto (36px, left, bold, $color-primary);
         text-shadow: $color-dark 2px 2px 4px;
         margin: 50px 10px 0;
     }
 
-    .subrayadoSeccion {
+    // linea divisoria
+    .sectionDivision {
         margin: 0 0 30px;
         width: 100%;
         height: 10px;
@@ -27,17 +29,18 @@
     }
 }
 
-.galeriaInfantiles,
-.galeriaEventos,
-.galeriaTrabajos,
-.galeriaMias {
+// Galerias hechas con grid
+.galleryInfantiles,
+.galleryEventos,
+.galleryTrabajos,
+.galleryMias {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 10px;
     padding-bottom: 20px;
 }
 
-.imagenGaleria {
+.galeryImg {
     width: 100%;
     height: 50vh;
     overflow: hidden;
@@ -61,23 +64,21 @@
     height: 710px;
 }
 
-.galeriaInfantiles img:hover,
-.galeriaEventos img:hover,
-.galeriaTrabajos img:hover,
-.imagenGaleriaTaller img:hover,
-.galeriaMias img:hover {
+.galleryInfantiles img:hover,
+.galleryEventos img:hover,
+.galleryTrabajos img:hover,
+.galleryImgTaller img:hover,
+.galleryMias img:hover {
     transform: scale(1.1);
 }
 
-/* Galleria TALLERES con flex*/
-
-.galeriaTalleres {
+/* Galleria TALLERES hecha con flex*/
+.galleryTalleres {
     @include flex (row, space-between, 0, 10px);
     flex-wrap: wrap;
-
 }
 
-.imagenGaleriaTaller {
+.galleryImgTaller {
     flex-grow: 1;
     flex-basis: 280px;
     height: 280px;

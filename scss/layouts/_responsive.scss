@@ -1,8 +1,10 @@
 /* --------------------- RESPONSIVE --------------------- */
 
-@media (max-width: 992px) {
-  /* cambio en organizacion de las CARD en Sobre Mi */
+/* -----------breakpoint 992px----------- */
 
+@media (max-width: 992px) {
+
+  /* cambio en organizacion de las CARD en Sobre Mi */
   .sobremiBox {
     flex-direction: column;
     padding: 20px;
@@ -14,7 +16,6 @@
       height: 100%;
     }
   }
-
 
   .sobremiContent {
     h3 {
@@ -58,6 +59,8 @@
 
 }
 
+
+/* -----------breakpoint 840px----------- */
 @media (max-width: 840px) {
 
   /* cambio en organizacion de las CARDS en Home*/
@@ -66,9 +69,11 @@
   }
 }
 
+/* -----------breakpoint 767px----------- */
 @media (max-width: 767px) {
+
   // cambio en el botón flotante de whatsapp 
-  .btn-whatsapp img{
+  .btn-whatsapp img {
     width: 60px;
   }
 
@@ -77,13 +82,8 @@
     flex-direction: row;
   }
 
-  /* cambio en el footer */
-  .footerContent {
-    flex-direction: column;
-  }
 
   /* cambio en testimonio card */
-
   .testimonioBox {
     height: 750px;
   }
@@ -101,7 +101,6 @@
   }
 
   /* cambio en el tamaño de las imagenes del PORTFOLIO */
-
   .wide {
     grid-column: span 1;
   }
@@ -118,16 +117,28 @@
   }
 
   .cardTalleres {
-    width: 80%;
+    width: 90%;
   }
 
   // cambio en subtitulos
-  .subtitulo h2 {
-    font-size: 3.5rem;
+  .subtitle h2 {
+    font-size: 56px;
+  }
 
+  // cambio en Contacto (botones a links)
+  .linksBox {
+    p {
+      font-size: 16px;
+    }
+
+    a {
+      width: 85%;
+      gap: 0;
+    }
   }
 }
 
+/* -----------breakpoint 425px----------- */
 @media (max-width: 425px) {
 
   // cambio en el navbar

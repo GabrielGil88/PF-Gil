@@ -1,7 +1,6 @@
 /* --------------------- SOBRE MI --------------------- */
-
 .sobremiBox {
-  @include flex (row, center, center, 20px);
+  @include flex (row, center, center, 30px);
   border-radius: 20px;
   margin: 50px 0;
   padding: 50px;
