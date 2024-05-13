@@ -836,7 +836,7 @@ textarea {
   .testimonioContent {
     flex-direction: column;
     padding: 10px;
-    height: 50%;
+    height: 85vh;
   }
   .testimonioContent img {
     height: 250px;
