@@ -403,7 +403,7 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 2vh;
+  gap: 10px;
   height: 300px;
   padding: 20px 50px;
 }
@@ -415,13 +415,21 @@ header {
   max-width: 250px;
   border-radius: 5%;
 }
-.testimonioContent p {
+
+.testimonioText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.testimonioText p {
   font-size: 18px;
   text-align: center;
   font-weight: 500;
   color: #000000;
 }
-.testimonioContent h3 {
+.testimonioText h3 {
   font-size: 24px;
   text-align: center;
   font-weight: 600;
@@ -835,11 +843,17 @@ textarea {
   }
   .testimonioContent {
     flex-direction: column;
-    padding: 10px;
-    height: 85vh;
+    justify-content: start;
+    overflow: hidden;
+    gap: 10px;
+    padding: 20px 10px;
+    height: 500px;
   }
   .testimonioContent img {
+    width: 250px;
     height: 250px;
+    min-width: 250px;
+    min-height: 250px;
     align-self: center;
     border-radius: 100%;
   }
@@ -873,6 +887,9 @@ textarea {
 @media (max-width: 425px) {
   .logo {
     width: 80%;
+  }
+  .testimonioContent {
+    height: 600px;
   }
 }
 

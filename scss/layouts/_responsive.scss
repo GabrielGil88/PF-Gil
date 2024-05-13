@@ -85,11 +85,17 @@
 
   .testimonioContent {
     flex-direction: column;
-    padding: 10px;
-    height: 85vh;
+    justify-content: start;
+    overflow: hidden;
+    gap: 10px;
+    padding: 20px 10px;
+    height: 500px;
 
     img {
+      width: 250px;
       height: 250px;
+      min-width: 250px;
+      min-height: 250px;
       align-self: center;
       border-radius: 100%;
     }
@@ -139,6 +145,11 @@
   // cambio en el navbar
   .logo {
     width: 80%;
+  }
+
+  // cambio nuevamente tamaño de card en testimonios
+  .testimonioContent {
+    height: 600px;
   }
 
 }
