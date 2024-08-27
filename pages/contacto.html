@@ -17,6 +17,13 @@
     <!-- link a css -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Colour Palette | ~ CONTACTO ~ </title>
+        <!-- Link a EmailJS -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+    (function() {
+        emailjs.init("7WXrUjzDVhwN3bOyq"); 
+    })();
+    </script>
 </head>
 
 <body>
@@ -62,22 +69,22 @@
             </div>
             <div class="contactContain">
                 <article class="formularioContact">
-                    <form>
+                    <form id="contact-form">
                         <div class="form-group">
                             <label for="name">Nombre</label>
-                            <input type="text" placeholder="Nombre" id="name" required>
+                            <input type="text" placeholder="Nombre" id="name" name="name" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">Teléfono/Whatsapp</label>
-                            <input type="tel" placeholder="(+54) 11 #### #### " id="phone" required>
+                            <input type="tel" placeholder="(+54) 11 #### #### " id="phone" name="phone" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" placeholder="tuemail@ejemplo.com" id="email" required>
+                            <input type="email" placeholder="tuemail@ejemplo.com" id="email" name="email" required>
                         </div>
                         <div class="form-group">
                             <label for="comment">Mensaje</label>
-                            <textarea name="Mensaje" id="comment" cols="30" rows="10"
+                            <textarea name="comment" id="comment" cols="30" rows="10"
                                 placeholder="Escribe tu comentario aquí..." required></textarea>
                         </div>
                         <!-- Botones de formulario -->
@@ -149,6 +156,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!-- script de EmailJS -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Previene el comportamiento por defecto del formulario (recargar la página).
+            
+            // Enviar el formulario usando EmailJS
+            emailjs.sendForm('service_jtryut4', 'template_4l0m74t', this)
+                .then(function() {
+                    alert('Correo enviado exitosamente.'); // Muestra un mensaje de éxito.
+                    document.getElementById('contact-form').reset(); // Resetea el formulario después de enviar.
+                }, function(error) {
+                    alert('Error al enviar el correo: ' + JSON.stringify(error)); // Muestra un mensaje de error.
+                });
+        });
+    </script>
 </body>
 
 </html>
